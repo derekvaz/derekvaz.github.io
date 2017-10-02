@@ -4,18 +4,21 @@
     <title> </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/dv.css">
-    <script type="text/js" src="js/jquery-3.2.1.min.js"></script>
-    <script>
-    // Make your API request:
-    var apiUrl = "https://derek-vaz.elemeno.io";
-    //put the correct method where the underscore is:
-    $.get(apiUrl, function(data) {
-        $('body').html("<h1>It works!</h1>");
-    });
-    </script>
   </head>
-  <header>
+  <body>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+      $( document ).ready(function() {
+        // Make your API request:
+        var apiUrl = "https://derek-vaz.elemeno.io";
+        //put the correct method where the underscore is:
+        $.get(apiUrl, function(data) {
+            $('body').html("<h1>It works!</h1>");
+        });
+      });
+    </script>
     <h1>Derek Vaz</h1>
     <h2>Huge Toronto</h2>
-  </header>
+  </body>
 </html>
